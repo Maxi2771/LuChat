@@ -46,7 +46,7 @@ else:
     with st.sidebar:
         st.header("Configuración del Chat")
         
-        modelos = ['gemma2-9b-it', 'llama-3.1-8b-instant']
+        modelos = ['groq/compound']
         modelo_seleccionado = st.selectbox("Selecciona un modelo de IA", modelos, index=modelos.index(st.session_state.get('modelo_seleccionado', 'gemma2-9b-it')), key="model_selector")
         st.session_state.modelo_seleccionado = modelo_seleccionado
 
